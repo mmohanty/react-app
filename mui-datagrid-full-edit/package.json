@@ -1,0 +1,94 @@
+{
+  "name": "mui-datagrid-full-edit",
+  "version": "1.2.5",
+  "description": "A full functioned react MUI grid component with CRUD and an easy way of @mui/x-data-grid",
+  "private": false,
+  "repository": "https://github.com/prettyblueberry/mui-datagrid-full-edit.git",
+  "author": {
+    "name": "Blueberry",
+    "url": "https://github.com/prettyblueberry"
+  },
+  "contributors": [
+    {
+      "name": "Aashutosh Poudel",
+      "url": "https://github.com/atosh502"
+    },
+    {
+      "name": "Black Leopard",
+      "url": "https://github.com/inteleopard"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.11.16",
+    "@mui/x-data-grid": "^6.0.4",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "axios": "^1.5.0",
+    "core-js": "^3.30.0",
+    "xlsx": "^0.18.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-react": "^7.18.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "keywords": [
+    "datagrid",
+    "grid",
+    "x-data-grid",
+    "export-excel",
+    "export-xlsx",
+    "export-csv",
+    "excel",
+    "xlsx",
+    "csv",
+    "filter",
+    "toolbar",
+    "mui",
+    "material",
+    "material-ui",
+    "react",
+    "component",
+    "editor",
+    "crud",
+    "editable",
+    "table",
+    "javascript"
+  ]
+}
