@@ -57,7 +57,7 @@ function GridExcelExportMenuItem(props) {
     onClick: () => {
       handleExport(apiRef, columns);
       // Hide the export menu after the export
-      hideMenu === null || hideMenu === void 0 ? void 0 : hideMenu();
+      hideMenu === null || hideMenu === void 0 || hideMenu();
     }
   }, "Download as Excel");
 }
