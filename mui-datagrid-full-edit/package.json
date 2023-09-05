@@ -10,12 +10,8 @@
   },
   "contributors": [
     {
-      "name": "Aashutosh Poudel",
-      "url": "https://github.com/atosh502"
-    },
-    {
-      "name": "Black Leopard",
-      "url": "https://github.com/inteleopard"
+      "name": "Manas Mohanty",
+      "url": "https://github.com/mmohanty"
     }
   ],
   "license": "MIT",
@@ -31,6 +27,7 @@
     "@testing-library/user-event": "^14.4.3",
     "axios": "^1.5.0",
     "core-js": "^3.30.0",
+    "dayjs": "^1.11.9",
     "xlsx": "^0.18.5"
   },
   "scripts": {

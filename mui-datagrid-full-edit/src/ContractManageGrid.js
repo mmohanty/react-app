@@ -8,6 +8,8 @@ import * as React from "react";
 import FullEditDataGrid from "./lib/index";
 import { useEffect, useState } from "react";
 import contractController from "./contract";
+import dayjs from 'dayjs';
+
 
 export default function SellerManageGrid() {
     const [rows, setRawRows] = useState([]);
@@ -84,15 +86,15 @@ const columns = [
         editable: false
     },
     {
-        field: "vendorName",
+        field: "vendor_name",
         headerName: "Vendor Name",
         //width: 80,
         align: "center",
-        type: "number",
+        type: "string",
         editable: true
     },
     {
-        field: "contractId",
+        field: "contract_id",
         headerName: "Contract Number",
         //width: 100,
         headerAlign: "center",
@@ -101,29 +103,32 @@ const columns = [
         editable: true
     },
     {
-        field: "startDate",
+        field: "start_date",
         headerName: "Start Date",
         //width: 150,
         headerAlign: "center",
-        type: "string",
-        align: "date",
-        editable: true
+        type: "date",
+        //align: "center",
+        editable: true,
+        valueFormatter: (params) => dayjs(params.value).format('DD/MM/YYYY'),
     },
     {
-        field: "endDate",
+        field: "end_date",
         headerName: "End Date",
         //width: 250,
         headerAlign: "center",
         type: "date",
-        editable: true
+        editable: true,
+        valueFormatter: (params) => dayjs(params.value).format('DD/MM/YYYY'),
     },
     {
-        field: "renewalDate",
+        field: "renewal_date",
         headerName: "Renewal Date",
         //width: 250,
         headerAlign: "center",
-        type: "string",
-        editable: true
+        type: "date",
+        editable: true,
+        valueFormatter: (params) => dayjs(params.value).format('DD/MM/YYYY'),
     },
     {
         field: "licenseBase",
@@ -206,7 +211,7 @@ const columns = [
         editable: true
     },
     {
-        field: "totalContractValue",
+        field: "contract_value",
         headerName: "Total Contract Value",
         //width: 250,
         headerAlign: "center",
